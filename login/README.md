@@ -52,7 +52,7 @@ project-root/
 │
 ├── assets/
 │   ├── login.png
-│   └── login-vid.mp4
+│   └── login-vid.gif
 │
 ├── index.html
 ├── style.css
