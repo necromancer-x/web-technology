@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete Forms Example</title>
+  </head>
+
+  <body>
+    <!-- ================= LOGIN FORM ================= -->
+    <section class="login-section">
+      <h1 class="form-title">Login Form</h1>
+
+      <form class="login-form">
+        <div class="form-group">
+          <label for="login-email" class="form-label">Email</label>
+          <input
+            type="email"
+            id="login-email"
+            name="email"
+            class="form-input"
+            placeholder="johndoe@example.com"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="login-password" class="form-label">Password</label>
+          <input
+            type="password"
+            id="login-password"
+            name="password"
+            class="form-input"
+            placeholder="Enter your password"
+          />
+        </div>
+
+        <button type="reset" class="btn btn-reset">Reset</button>
+      </form>
+    </section>
+
+    <hr />
+
+    <!-- ================= REGISTRATION FORM ================= -->
+    <section class="register-section">
+      <h2 class="form-title">Registration Form</h2>
+
+      <form class="register-form">
+        <!-- Text Input -->
+        <div class="form-group">
+          <label for="full-name" class="form-label">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="fullName"
+            class="form-input"
+            placeholder="John Doe"
+          />
+        </div>
+
+        <!-- Radio Buttons -->
+        <div class="form-group">
+          <span class="form-label">Gender</span>
+
+          <label class="form-radio-label">
+            <input type="radio" name="gender" value="male" class="form-radio" />
+            Male
+          </label>
+
+          <label class="form-radio-label">
+            <input
+              type="radio"
+              name="gender"
+              value="female"
+              class="form-radio"
+            />
+            Female
+          </label>
+
+          <label class="form-radio-label">
+            <input
+              type="radio"
+              name="gender"
+              value="other"
+              class="form-radio"
+            />
+            Other
+          </label>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+          <label class="form-label">
+            <input type="checkbox" name="subscribe" class="form-checkbox" />
+            Subscribe to newsletter
+          </label>
+        </div>
+
+        <!-- Select Dropdown -->
+        <div class="form-group">
+          <label for="club-select" class="form-label">Select Club</label>
+          <select id="club-select" name="club" class="form-select">
+            <option value="">-- Choose a club --</option>
+            <option value="diy">DIY Club</option>
+            <option value="gfg">Geeks for Geeks</option>
+            <option value="gdsc">Google Developer Student Club</option>
+          </select>
+        </div>
+
+        <!-- Date Input -->
+        <div class="form-group">
+          <label for="dob" class="form-label">Date of Birth</label>
+          <input type="date" id="dob" name="dob" class="form-input" />
+        </div>
+
+        <!-- Color Picker -->
+        <div class="form-group">
+          <label for="favorite-color" class="form-label">Favorite Color</label>
+          <input
+            type="color"
+            id="favorite-color"
+            name="favoriteColor"
+            class="form-color"
+          />
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <label for="about-user" class="form-label">About Yourself</label>
+          <textarea
+            id="about-user"
+            name="about"
+            class="form-textarea"
+            rows="4"
+            placeholder="Tell us something about yourself..."
+          ></textarea>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-submit">Submit</button>
+      </form>
+    </section>
+  </body>
+</html>

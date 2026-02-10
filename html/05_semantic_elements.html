@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Semantic Elements – Complete Demo</title>
+  </head>
+
+  <body>
+    <!-- ===== Site Header ===== -->
+    <header>
+      <h1>Semantic HTML Masterclass</h1>
+      <p>Learn HTML the right way</p>
+
+      <nav aria-label="Main Navigation">
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#article">Article</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== Main Content ===== -->
+    <main id="main">
+      <!-- ===== Aside ===== -->
+      <aside>
+        <h2>Related Topics</h2>
+        <ul>
+          <li>HTML Basics</li>
+          <li>CSS Layout</li>
+          <li>Accessibility</li>
+        </ul>
+      </aside>
+
+      <!-- ===== Article ===== -->
+      <article id="article">
+        <!-- Article Header -->
+        <header>
+          <h2>Why Semantic HTML Matters</h2>
+          <p>
+            Published on
+            <time datetime="2026-02-10">February 10, 2026</time>
+          </p>
+        </header>
+
+        <!-- Section -->
+        <section>
+          <h3>Definition</h3>
+          <p>
+            Semantic HTML uses tags that describe the meaning of content. This
+            helps browsers, screen readers, and search engines.
+          </p>
+        </section>
+
+        <!-- Section -->
+        <section>
+          <h3>Inline Semantics</h3>
+          <p>
+            <strong>Strong importance</strong>, <em>emphasis</em>,
+            <mark>highlighted text</mark>,
+            <abbr title="HyperText Markup Language">HTML</abbr>,
+            <cite>MDN Docs</cite>, <q>Semantic HTML is powerful</q>.
+          </p>
+        </section>
+
+        <!-- Figure -->
+        <section>
+          <h3>Figure Example</h3>
+          <figure>
+            <pre><code>console.log("Semantic HTML");</code></pre>
+            <figcaption>Example JavaScript code</figcaption>
+          </figure>
+        </section>
+
+        <!-- Details / Summary -->
+        <section>
+          <h3>More Info</h3>
+          <details>
+            <summary>Click to expand</summary>
+            <p>
+              Semantic elements improve SEO, accessibility, and maintainability.
+            </p>
+          </details>
+        </section>
+
+        <!-- Article Footer -->
+        <footer>
+          <p>
+            Tags:
+            <mark>HTML</mark>, <mark>Accessibility</mark>,
+            <mark>SEO</mark>
+          </p>
+        </footer>
+      </article>
+    </main>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact">
+      <h2>Contact Information</h2>
+
+      <address>
+        Written by <a href="mailto:abc@example.com">necromancer-x</a><br />
+        GitHub:
+        <a href="https://github.com/necromancer-x/web-technology">
+          necromancer-x/web-technology
+        </a>
+      </address>
+    </section>
+
+    <!-- ===== Footer ===== -->
+    <footer>
+      <p>
+        &copy;
+        <time datetime="2026">2026</time>
+        necromancer-x — for educational use only
+      </p>
+    </footer>
+  </body>
+</html>

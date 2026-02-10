@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!--
+    ===============================
+    DOCUMENT METADATA (HEAD)
+    ===============================
+
+    The <head> section contains information ABOUT the document.
+    Nothing here is directly visible on the web page.
+  -->
+
+    <!-- 1. Character Encoding
+       Ensures text renders correctly (UTF-8 supports all languages)
+  -->
+    <meta charset="UTF-8" />
+
+    <!-- 2. Viewport (Responsive Design)
+       Makes the page scale properly on mobile devices
+  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 3. Page Title
+       Shown in browser tab and search engine results
+  -->
+    <title>Understanding the HTML Head Element</title>
+
+    <!--
+    ===============================
+    SEO METADATA
+    ===============================
+  -->
+
+    <!-- Page description for search engines -->
+    <meta
+      name="description"
+      content="In-depth explanation of the HTML head element and its tags"
+    />
+
+    <!-- Author information -->
+    <meta name="author" content="necromancer-x" />
+
+    <!-- Keywords (legacy, still educational) -->
+    <meta name="keywords" content="HTML, head tag, metadata, web development" />
+
+    <!--
+    ===============================
+    STYLING
+    ===============================
+  -->
+
+    <!-- External CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Internal CSS (for small demos) -->
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+    </style>
+
+    <!--
+    ===============================
+    ICONS & BRANDING
+    ===============================
+  -->
+
+    <!-- Browser tab icon -->
+    <link rel="icon" href="favicon.ico" />
+
+    <!--
+    ===============================
+    JAVASCRIPT
+    ===============================
+
+    `defer` ensures JS loads AFTER HTML is parsed
+    can be loaded at the end of the body
+  -->
+    <script defer src="script.js"></script>
+  </head>
+
+  <body>
+    <!--
+    ===============================
+    VISIBLE CONTENT (BODY)
+    ===============================
+
+    Everything inside <body> is rendered on the page
+  -->
+
+    <header>
+      <h1>HTML &lt;head&gt; Element Explained</h1>
+      <p>
+        This page explains what belongs inside the HTML head and why it matters
+        in real-world web development.
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>What is the &lt;head&gt; element?</h2>
+        <p>
+          The <strong>head</strong> element contains metadata—information about
+          the document such as its title, encoding, styles, scripts, and
+          SEO-related data.
+        </p>
+      </section>
+
+      <section>
+        <h2>What belongs in the head?</h2>
+        <ul>
+          <li>Meta tags (charset, viewport, description)</li>
+          <li>Title of the document</li>
+          <li>Links to CSS files</li>
+          <li>JavaScript files</li>
+          <li>Icons and branding information</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>What does NOT belong in the head?</h2>
+        <ul>
+          <li>Headings</li>
+          <li>Paragraphs</li>
+          <li>Images</li>
+          <li>Forms</li>
+          <li>Any visible content</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Key Rule to Remember</h2>
+        <p>
+          If something is <em>shown on the page</em>, it goes in the
+          <code>&lt;body&gt;</code>. If it <em>describes or configures</em> the
+          page, it goes in the <code>&lt;head&gt;</code>.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 necromancer-x — HTML learning material</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Media Elements</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>HTML Media Elements</h1>
+      <p>Learning how to use images, video, audio, and figure correctly</p>
+    </header>
+
+    <main>
+      <!-- ================= IMAGE ================= -->
+      <section>
+        <h2>Image Element</h2>
+
+        <img
+          src="../login/assets/login.png"
+          alt="Login form user interface"
+          title="Login Page"
+          width="200"
+          loading="lazy"
+        />
+
+        <p>
+          The <code>&lt;img&gt;</code> tag is used to display images. The
+          <code>alt</code> attribute is mandatory for accessibility.
+        </p>
+      </section>
+
+      <!-- ================= FIGURE & FIGCAPTION ================= -->
+      <section>
+        <h2>Figure and Figcaption</h2>
+
+        <figure>
+          <img
+            src="../login/assets/login.png"
+            alt="Screenshot of a login form interface"
+            width="200"
+          />
+          <figcaption>
+            Figure 1: Login form UI displayed as a grouped media element.
+          </figcaption>
+        </figure>
+
+        <p>
+          <code>&lt;figure&gt;</code> groups media with its description, and
+          <code>&lt;figcaption&gt;</code> explains it.
+        </p>
+      </section>
+
+      <!-- ================= VIDEO ================= -->
+      <section>
+        <h2>Video Element</h2>
+
+        <video
+          width="400"
+          controls
+          preload="metadata"
+          controlslist="noremoteplayback"
+        >
+          <source src="../login/assets/login-vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <p>
+          The <code>&lt;video&gt;</code> element is used to embed video content.
+          Using <code>&lt;source&gt;</code> allows multiple formats.
+        </p>
+      </section>
+
+      <!-- ================= AUDIO ================= -->
+      <section>
+        <h2>Audio Element</h2>
+
+        <audio controls preload="metadata">
+          <source src="sample-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+
+        <p>
+          The <code>&lt;audio&gt;</code> tag is used for sound content like
+          music or podcasts.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 — HTML Media learning example</p>
+    </footer>
+  </body>
+</html>
