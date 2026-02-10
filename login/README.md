@@ -23,7 +23,7 @@ Below is a preview of the login interface:
 
 A short demonstration of the login page functionality:
 
-[▶ Watch Demo Video](assets/login-vid.gif)
+![Live demo](assets/login-vid.gif)
 
 > _If the video does not play directly on your platform, please download and view it locally._
 
