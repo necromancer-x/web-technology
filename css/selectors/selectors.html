@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors Learning Guide</title>
+
+    <style>
+      /* ===== GLOBAL ===== */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: "Segoe UI", sans-serif;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        padding: 40px;
+      }
+
+      /* ===== LAYOUT ===== */
+
+      .container {
+        max-width: 1200px;
+        margin: auto;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+      h2 {
+        color: #7dd3fc;
+        margin-top: 0;
+      }
+
+      /* ===== GLASS CARD ===== */
+
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        border-radius: 18px;
+        padding: 25px;
+        margin-bottom: 30px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      }
+
+      /* ===== CODE BLOCK ===== */
+
+      .code {
+        background: #020617;
+        padding: 12px;
+        border-radius: 8px;
+        font-family: monospace;
+        margin-bottom: 15px;
+        color: #86efac;
+      }
+
+      /* ===== DEMO AREA ===== */
+
+      .demo {
+        border: 1px dashed rgba(255, 255, 255, 0.3);
+        padding: 15px;
+      }
+
+      /* ================= SELECTOR DEMOS ================= */
+
+      /* TYPE SELECTOR DEMO */
+      .type-demo p {
+        color: #fde68a;
+        font-weight: bold;
+      }
+
+      /* CLASS SELECTOR */
+      .highlight {
+        background: #7dd3fc;
+        color: black;
+        padding: 5px;
+      }
+
+      /* ID SELECTOR */
+      #header {
+        background: #f87171;
+        padding: 8px;
+      }
+
+      /* ATTRIBUTE */
+      .attr-demo input[type="text"] {
+        border: 2px solid #7dd3fc;
+        padding: 6px;
+      }
+
+      /* DESCENDANT */
+      .desc-demo article p {
+        background: #111827;
+        padding: 6px;
+      }
+
+      /* CHILD */
+      .child-demo div > p {
+        color: #fde68a;
+      }
+
+      /* ADJACENT */
+      .adj-demo h3 + p {
+        font-weight: bold;
+      }
+
+      /* GENERAL */
+      .gen-demo h4 ~ p {
+        color: #fda4af;
+      }
+
+      /* HOVER */
+      .hover-demo a:hover {
+        background: #7dd3fc;
+        color: black;
+        padding: 5px;
+      }
+
+      /* PSEUDO ELEMENT */
+      .demo-text::first-letter {
+        font-size: 30px;
+        font-weight: bold;
+        color: #fde68a;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>CSS Selectors - Visual + Code Guide</h1>
+
+      <!-- TYPE -->
+      <div class="card">
+        <h2>Type Selector</h2>
+        <div class="code">p { color: yellow; }</div>
+        <div class="demo type-demo">
+          <p>Paragraph 1</p>
+          <p>Paragraph 2</p>
+        </div>
+      </div>
+
+      <!-- CLASS -->
+      <div class="card">
+        <h2>Class Selector</h2>
+        <div class="code">.highlight { background: blue; }</div>
+        <div class="demo">
+          <p class="highlight">Styled using class</p>
+        </div>
+      </div>
+
+      <!-- ID -->
+      <div class="card">
+        <h2>ID Selector</h2>
+        <div class="code">#header { background: red; }</div>
+        <div class="demo">
+          <div id="header">Styled using ID</div>
+        </div>
+      </div>
+
+      <!-- ATTRIBUTE -->
+      <div class="card">
+        <h2>Attribute Selector</h2>
+        <div class="code">input[type="text"] { border: blue; }</div>
+        <div class="demo attr-demo">
+          <input type="text" placeholder="Styled input" />
+        </div>
+      </div>
+
+      <!-- DESCENDANT -->
+      <div class="card">
+        <h2>Descendant Selector</h2>
+        <div class="code">article p { background: black; }</div>
+        <div class="demo desc-demo">
+          <article><p>Styled paragraph</p></article>
+        </div>
+      </div>
+
+      <!-- CHILD -->
+      <div class="card">
+        <h2>Child Selector</h2>
+        <div class="code">div > p { color: yellow; }</div>
+        <div class="demo child-demo">
+          <div>
+            <p>Direct child</p>
+            <section><p>Not direct child</p></section>
+          </div>
+        </div>
+      </div>
+
+      <!-- ADJACENT -->
+      <div class="card">
+        <h2>Adjacent Sibling</h2>
+        <div class="code">h3 + p { font-weight: bold; }</div>
+        <div class="demo adj-demo">
+          <h3>Heading</h3>
+          <p>Styled</p>
+        </div>
+      </div>
+
+      <!-- GENERAL -->
+      <div class="card">
+        <h2>General Sibling</h2>
+        <div class="code">h4 ~ p { color: red; }</div>
+        <div class="demo gen-demo">
+          <h4>Heading</h4>
+          <p>Styled</p>
+          <p>Styled too</p>
+        </div>
+      </div>
+
+      <!-- HOVER -->
+      <div class="card">
+        <h2>Pseudo Class</h2>
+        <div class="code">a:hover { background: blue; }</div>
+        <div class="demo hover-demo">
+          <a href="#">Hover me</a>
+        </div>
+      </div>
+
+      <!-- PSEUDO ELEMENT -->
+      <div class="card">
+        <h2>Pseudo Element</h2>
+        <div class="code">p::first-letter { font-size: 30px; }</div>
+        <div class="demo">
+          <p class="demo-text">Pseudo element example.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
