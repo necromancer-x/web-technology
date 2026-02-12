@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>JavaScript Complete Basics</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: Segoe UI;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        color: white;
+        padding: 40px;
+      }
+      .container {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .card {
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(15px);
+        padding: 25px;
+        border-radius: 18px;
+        margin-bottom: 25px;
+      }
+      .code {
+        background: #020617;
+        padding: 12px;
+        border-radius: 8px;
+        font-family: monospace;
+        color: #86efac;
+        margin-bottom: 10px;
+        white-space: pre-line;
+      }
+      .output {
+        border: 1px dashed rgba(255, 255, 255, 0.3);
+        padding: 15px;
+        min-height: 60px;
+        white-space: pre-line;
+      }
+      button {
+        padding: 8px 16px;
+        border: none;
+        background: #7dd3fc;
+        color: black;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>JavaScript Basics — Complete Lessons</h1>
+
+      <!-- ASSIGNMENT -->
+      <div class="card">
+        <h2>Assignment Operators</h2>
+        <div class="code">let num = 10; num /= 5;</div>
+        <button onclick="assignDemo()">Run</button>
+        <div class="output" id="o1"></div>
+      </div>
+
+      <!-- INCREMENT -->
+      <div class="card">
+        <h2>Increment / Decrement</h2>
+        <div class="code">let score = 100; score++;</div>
+        <button onclick="incDemo()">Run</button>
+        <div class="output" id="o2"></div>
+      </div>
+
+      <!-- VARIABLE COPY -->
+      <div class="card">
+        <h2>Variable Copy</h2>
+        <div class="code">let score = 102; let copy = score;</div>
+        <button onclick="copyDemo()">Run</button>
+        <div class="output" id="o3"></div>
+      </div>
+
+      <!-- DATA TYPES -->
+      <div class="card">
+        <h2>Data Types</h2>
+        <div class="code">String, Number, Boolean, Undefined, Null, Object</div>
+        <button onclick="typeDemo()">Run</button>
+        <div class="output" id="o4"></div>
+      </div>
+
+      <!-- OBJECTS -->
+      <div class="card">
+        <h2>Arrays & Objects</h2>
+        <div class="code">
+          let games = ["arcade","rpg"]; let user = {name:"peter"};
+        </div>
+        <button onclick="objDemo()">Run</button>
+        <div class="output" id="o5"></div>
+      </div>
+
+      <!-- LOGICAL -->
+      <div class="card">
+        <h2>Logical Operators</h2>
+        <div class="code">isEmailUser || isGoogleUser</div>
+        <button onclick="logicDemo()">Run</button>
+        <div class="output" id="o6"></div>
+      </div>
+
+      <!-- COMPLEX MATH -->
+      <div class="card">
+        <h2>Complex Math Expression</h2>
+        <div class="code">((2 * (3 + 2)) - 1)</div>
+        <button onclick="mathDemo()">Run</button>
+        <div class="output" id="o7"></div>
+      </div>
+
+      <!-- COMPARISON -->
+      <div class="card">
+        <h2>Comparison</h2>
+        <div class="code">3 == 3 3 > 6</div>
+        <button onclick="compareDemo()">Run</button>
+        <div class="output" id="o8"></div>
+      </div>
+
+      <!-- CONSOLE -->
+      <div class="card">
+        <h2>Console Methods</h2>
+        <div class="code">console.log() console.table() console.warn()</div>
+        <button onclick="consoleDemo()">Run</button>
+        <div class="output" id="o9"></div>
+      </div>
+    </div>
+
+    <script>
+      function assignDemo() {
+        let num = 10;
+        num /= 5;
+        o1.innerText = "10 ÷ 5 = " + num;
+      }
+
+      function incDemo() {
+        let score = 100;
+        score++;
+        o2.innerText = "Score after increment = " + score;
+      }
+
+      function copyDemo() {
+        let score = 102;
+        let copy = score;
+        o3.innerText = "Original = " + score + "\nCopied = " + copy;
+      }
+
+      function typeDemo() {
+        o4.innerText =
+          '"hello" → ' +
+          typeof "hello" +
+          "\n10 → " +
+          typeof 10 +
+          "\ntrue → " +
+          typeof true +
+          "\n{} → " +
+          typeof {};
+      }
+
+      function objDemo() {
+        let games = ["arcade", "rpg"];
+        let user = { name: "Peter" };
+        o5.innerText =
+          "Games: " + games.join(", ") + "\nUser name: " + user.name;
+      }
+
+      function logicDemo() {
+        let email = true;
+        let google = false;
+        o6.innerText =
+          "Email login = true\nGoogle login = false\nCan login? → " +
+          (email || google);
+      }
+
+      function mathDemo() {
+        let result = 2 * (3 + 2) - 1;
+        o7.innerText = "((2*(3+2))-1) = " + result;
+      }
+
+      function compareDemo() {
+        o8.innerText = "3 == 3 → " + (3 == 3) + "\n3 > 6 → " + (3 > 6);
+      }
+
+      function consoleDemo() {
+        console.log("Hello");
+        console.table({ city: "Pune" });
+        console.warn("Warning example");
+        o9.innerText = "Open browser console to see output.";
+      }
+    </script>
+  </body>
+</html>
