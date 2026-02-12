@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Examples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>DOM Manipulation Examples</h1>
+
+      <!-- 1 -->
+      <div class="card">
+        <h2>1. Accessing DOM Elements</h2>
+        <p id="myParagraph">Click button to change this text</p>
+        <button id="changeTextButton">Change Text</button>
+      </div>
+
+      <!-- 2 -->
+      <div class="card">
+        <h2>2. Traversing DOM</h2>
+        <ul id="citiesList">
+          <li>New York</li>
+          <li>Tokyo</li>
+          <li>Paris</li>
+        </ul>
+        <button id="highlightFirstCity">Highlight First City</button>
+      </div>
+
+      <!-- 3 -->
+      <div class="card">
+        <h2>3. Modifying Content & Style</h2>
+        <div>Order: <span id="coffeeType">Latte</span></div>
+        <button id="changeOrder">Change Order</button>
+      </div>
+
+      <!-- 4 -->
+      <div class="card">
+        <h2>4. Creating Elements</h2>
+        <ul id="shoppingList">
+          <li>Bread</li>
+          <li>Milk</li>
+        </ul>
+        <button id="addNewItem">Add Item</button>
+      </div>
+
+      <!-- 5 -->
+      <div class="card">
+        <h2>5. Removing Elements</h2>
+        <ul id="taskList">
+          <li>Task 1</li>
+          <li>Task 2</li>
+          <li>Task 3</li>
+        </ul>
+        <button id="removeLastTask">Remove Last Task</button>
+      </div>
+
+      <!-- 6 -->
+      <div class="card">
+        <h2>6. Event Handling</h2>
+        <button id="clickMeButton">Double Click Me</button>
+      </div>
+
+      <!-- 7 -->
+      <div class="card">
+        <h2>7. Event Delegation</h2>
+        <ul id="itemList">
+          <li class="listItem">Item 1</li>
+          <li class="listItem">Item 2</li>
+          <li class="listItem">Item 3</li>
+        </ul>
+        <p>Click any item</p>
+      </div>
+
+      <!-- 8 -->
+      <div class="card">
+        <h2>8. Form Handling</h2>
+        <form id="feedbackForm">
+          <input type="text" id="feedbackInput" placeholder="Enter feedback" />
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+        <p id="feedbackDisplay"></p>
+      </div>
+
+      <!-- 9 -->
+      <div class="card">
+        <h2>9. DOM Content Loaded</h2>
+        <p id="domStatus">Waiting for DOM...</p>
+      </div>
+
+      <!-- 10 -->
+      <div class="card">
+        <h2>10. CSS Class Manipulation</h2>
+        <p id="descriptionText">Toggle highlight effect</p>
+        <button id="toggleHighlight">Toggle Highlight</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
