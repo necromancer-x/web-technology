@@ -134,19 +134,19 @@ const getTaskById = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, task[0], "Task fetched successfully"));
 });
 const updateTask = asyncHandler(async (req, res) => {
-  //chai
+  //code goes here
 });
 const deleteTask = asyncHandler(async (req, res) => {
-  //chai
+  //code goes here
 });
 const createSubTask = asyncHandler(async (req, res) => {
-  //chai
+  //code goes here
 });
 const updateSubTask = asyncHandler(async (req, res) => {
-  //chai
+  //code goes here
 });
 const deleteSubTask = asyncHandler(async (req, res) => {
-  //chai
+  //code goes here
 });
 
 export {
