@@ -1,0 +1,13 @@
+import express from "express";
+import studentRouter from "./routes/student.routes.js";
+const app = express();
+
+app.use(express.json());
+
+app.use("/api/v1", studentRouter);
+
+app.get("/", (req, res) => {
+  res.send("I'm up");
+});
+
+export default app;
