@@ -1,0 +1,37 @@
+function Card() {
+  return (
+    <div className="bg-surface backdrop-blur-[var(--blur-glass)] border border-border rounded-[var(--radius-glass)] shadow-lg max-w-sm p-6">
+      <h5 className="mb-3 text-2xl font-semibold tracking-tight text-heading leading-8">
+        Noteworthy technology acquisitions 2021
+      </h5>
+
+      <p className="text-body mb-6">
+        Here are the biggest technology acquisitions of 2025 so far, in reverse
+        chronological order.
+      </p>
+
+      <a
+        href="#"
+        className="inline-flex items-center text-white bg-brand hover:bg-brand-strong transition-all duration-200 shadow-[0_0_20px_var(--color-brand-glow)] font-medium leading-5 rounded-[var(--radius-glass)] text-sm px-4 py-2.5 focus:outline-none"
+      >
+        Read more
+        <svg
+          className="w-4 h-4 ms-1.5 rtl:rotate-180"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            d="M19 12H5m14 0-4 4m4-4-4-4"
+          />
+        </svg>
+      </a>
+    </div>
+  );
+}
+
+export default Card;
